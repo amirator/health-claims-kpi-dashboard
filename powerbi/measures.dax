@@ -1,0 +1,35 @@
+// Power BI measures - mirror sql/03_kpis.sql. Model: fct_service[*] -> dim_state, dim_hcpcs, dim_place_of_service, dim_year;
+// fct_enrollment (state_fips, service_year) -> dim_state, dim_year. fct_service_national -> dim_hcpcs, dim_place_of_service, dim_year.
+// Use fct_service_national for national totals (state rows exclude cells with <11 beneficiaries, ~1.4% of paid).
+
+Paid = SUM ( fct_service_national[paid_amt] )
+Allowed = SUM ( fct_service_national[allowed_amt] )
+Submitted = SUM ( fct_service_national[submitted_amt] )
+Services = SUM ( fct_service_national[services] )
+Paid per Service = DIVIDE ( [Paid], [Services] )
+Paid to Allowed % = DIVIDE ( [Paid], [Allowed] )
+Charge to Allowed x = DIVIDE ( [Submitted], [Allowed] )
+
+Paid PY =
+VAR py = MAX ( dim_year[service_year] ) - 1
+RETURN CALCULATE ( [Paid], dim_year[service_year] = py )
+Paid YoY % = DIVIDE ( [Paid] - [Paid PY], [Paid PY] )
+
+Share of Paid = DIVIDE ( [Paid], CALCULATE ( [Paid], ALL ( dim_hcpcs ) ) )
+HCPCS Paid Rank = RANKX ( ALL ( dim_hcpcs[hcpcs_cd] ), [Paid], , DESC, DENSE )
+
+// State-level (rendering-provider state) measures
+State Paid = SUM ( fct_service[paid_amt] )
+State Standardised = SUM ( fct_service[standardized_amt] )
+FFS Part B Benes = SUM ( fct_enrollment[ffs_part_b_benes] )
+Paid per FFS Part B Bene = DIVIDE ( [State Paid], [FFS Part B Benes] )
+Standardised per FFS Part B Bene = DIVIDE ( [State Standardised], [FFS Part B Benes] )
+Price Index = DIVIDE ( [State Paid], [State Standardised] )
+Services per 1k Benes = 1000 * DIVIDE ( SUM ( fct_service[services] ), [FFS Part B Benes] )
+
+// Robust outlier flag is pre-computed in SQL (median/MAD needs a two-pass calc); import tableau/state_outliers.csv
+// or recompute: ratio of a state's rate to the median state rate for the selected code.
+Median State Rate =
+MEDIANX ( FILTER ( ALL ( dim_state ), dim_state[state_group] = "50 states + DC" ),
+          CALCULATE ( [Services per 1k Benes] ) )
+Ratio to Median = DIVIDE ( [Services per 1k Benes], [Median State Rate] )

@@ -1,0 +1,63 @@
+state_fips,state_name,state_abbr,state_group
+01,Alabama,AL,50 states + DC
+02,Alaska,AK,50 states + DC
+04,Arizona,AZ,50 states + DC
+05,Arkansas,AR,50 states + DC
+06,California,CA,50 states + DC
+08,Colorado,CO,50 states + DC
+09,Connecticut,CT,50 states + DC
+10,Delaware,DE,50 states + DC
+11,District of Columbia,DC,50 states + DC
+12,Florida,FL,50 states + DC
+13,Georgia,GA,50 states + DC
+15,Hawaii,HI,50 states + DC
+16,Idaho,ID,50 states + DC
+17,Illinois,IL,50 states + DC
+18,Indiana,IN,50 states + DC
+19,Iowa,IA,50 states + DC
+20,Kansas,KS,50 states + DC
+21,Kentucky,KY,50 states + DC
+22,Louisiana,LA,50 states + DC
+23,Maine,ME,50 states + DC
+24,Maryland,MD,50 states + DC
+25,Massachusetts,MA,50 states + DC
+26,Michigan,MI,50 states + DC
+27,Minnesota,MN,50 states + DC
+28,Mississippi,MS,50 states + DC
+29,Missouri,MO,50 states + DC
+30,Montana,MT,50 states + DC
+31,Nebraska,NE,50 states + DC
+32,Nevada,NV,50 states + DC
+33,New Hampshire,NH,50 states + DC
+34,New Jersey,NJ,50 states + DC
+35,New Mexico,NM,50 states + DC
+36,New York,NY,50 states + DC
+37,North Carolina,NC,50 states + DC
+38,North Dakota,ND,50 states + DC
+39,Ohio,OH,50 states + DC
+40,Oklahoma,OK,50 states + DC
+41,Oregon,OR,50 states + DC
+42,Pennsylvania,PA,50 states + DC
+44,Rhode Island,RI,50 states + DC
+45,South Carolina,SC,50 states + DC
+46,South Dakota,SD,50 states + DC
+47,Tennessee,TN,50 states + DC
+48,Texas,TX,50 states + DC
+49,Utah,UT,50 states + DC
+50,Vermont,VT,50 states + DC
+51,Virginia,VA,50 states + DC
+53,Washington,WA,50 states + DC
+54,West Virginia,WV,50 states + DC
+55,Wisconsin,WI,50 states + DC
+56,Wyoming,WY,50 states + DC
+60,American Samoa,AS,Territory
+66,Guam,GU,Territory
+69,Northern Mariana Islands,MP,Territory
+72,Puerto Rico,PR,Territory
+78,Virgin Islands,VI,Territory
+9A,Armed Forces Central/South America,,Other / unknown
+9B,Armed Forces Europe,,Other / unknown
+9C,Armed Forces Pacific,,Other / unknown
+9D,Unknown,UK,Other / unknown
+9E,Foreign Country,,Other / unknown
+ZZ,Unspecified (blank in source),,Other / unknown

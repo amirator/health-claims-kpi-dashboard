@@ -1,0 +1,83 @@
+{
+  "paid_2024": 120801671723.89018,
+  "paid_2023": 113481810729.74998,
+  "paid_yoy": 0.06450250438435456,
+  "allowed_2024": 153112787693.1502,
+  "submitted_2024": 496035191969.1382,
+  "services_2024": 3554240899.4999976,
+  "services_yoy": 0.04200241727055842,
+  "ffs_part_b_benes_2024": 27982142,
+  "paid_per_ffs_b_bene_2024": 4317.098802653856,
+  "paid_per_ffs_b_bene_2023": 3964.5781262451333,
+  "paid_per_service_2024": 33.98803714764643,
+  "paid_to_allowed_2024": 0.7889718000954042,
+  "charge_to_allowed_2024": 3.239671874848434,
+  "hcpcs_codes_2024": 9403,
+  "codes_for_80pct_paid": 351,
+  "top10_share": 0.2183380084401923,
+  "top_code": {
+    "code": "99214",
+    "desc": "Established patient office or other outpatient visit with moderate level of decision making, if using time, 30 minutes or more",
+    "paid": 8534420769.93,
+    "share": 0.07064820087454324
+  },
+  "drug_share": 0.24465216176131166,
+  "drug_paid": 29554390131.630005,
+  "state_high": {
+    "name": "Florida",
+    "value": 6257.706846674704
+  },
+  "state_low": {
+    "name": "Vermont",
+    "value": 1442.8889517015396
+  },
+  "state_ratio": 4.3369289364197074,
+  "std_ratio": 4.289154654231756,
+  "std_high": "Florida",
+  "std_low": "Vermont",
+  "outlier_cells": 64,
+  "outlier_codes": 45,
+  "top_outlier": {
+    "state_abbr": "ID",
+    "hcpcs_cd": "91320",
+    "hcpcs_desc": "Sarscv2 vac 30mcg trs-suc im",
+    "ratio_to_median": 14.685492625208038,
+    "robust_z": 10.175254750546523
+  },
+  "top_growth": [
+    {
+      "hcpcs_cd": "Q4271",
+      "hcpcs_desc": "Complete ft, per square centimeter",
+      "paid": 930841739.6,
+      "paid_yoy": 187.69394237060516
+    },
+    {
+      "hcpcs_cd": "Q4205",
+      "hcpcs_desc": "Membrane graft or membrane wrap, per square centimeter",
+      "paid": 1149000358.87,
+      "paid_yoy": 3.2493806290385754
+    },
+    {
+      "hcpcs_cd": "Q4191",
+      "hcpcs_desc": "Restorigin, per square centimeter",
+      "paid": 582923065.7399999,
+      "paid_yoy": 302.46259070427624
+    },
+    {
+      "hcpcs_cd": "J2777",
+      "hcpcs_desc": "Injection, faricimab-svoa, 0.1 mg",
+      "paid": 1475577768.1000001,
+      "paid_yoy": 0.4799226399022183
+    },
+    {
+      "hcpcs_cd": "Q4164",
+      "hcpcs_desc": "Helicoll, per square centimeter",
+      "paid": 507785089.85,
+      "paid_yoy": 11.50080766131268
+    }
+  ],
+  "state_coverage_gap_2024": 0.013843969343016238,
+  "skin_sub_paid_2023": 3452501774.0199995,
+  "skin_sub_paid_2024": 7854024098.9800005,
+  "skin_sub_share_of_increase": 0.6013122829085924
+}
