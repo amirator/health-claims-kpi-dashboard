@@ -106,7 +106,7 @@ def main(con):
 
     fig.text(0.015, 0.012, "Source: CMS Medicare Physician & Other Practitioners – by Geography and Service (2023, 2024); CMS Medicare Monthly "
              "Enrollment (annual FFS Part B beneficiaries). Public domain. No denial/approval data exists in these files.\n"
-             "State = rendering-provider state; denominators = beneficiary residence. Built by Mohammad Amir Khan (github.com/amirator).",
+             "State = rendering-provider state; denominators = beneficiary residence. Built by Amir Khan (github.com/amirator).",
              fontsize=7.8, color=GREY)
 
     rp = pathlib.Path("reports")

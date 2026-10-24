@@ -112,4 +112,4 @@ Tested on Python 3.13. A clean-venv rebuild produced byte-identical `kpis.json`.
 - Service units for drug codes are billing units, so "paid per service" mixes units across code types.
 
 ## Author
-Mohammad Amir Khan · [github.com/amirator](https://github.com/amirator). This is a personal portfolio project, not affiliated with CMS or any insurer.
+Amir Khan · [github.com/amirator](https://github.com/amirator). This is a personal portfolio project, not affiliated with CMS or any insurer.
